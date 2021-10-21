@@ -2,6 +2,7 @@
     JavaScript Prog. Ex. 2
     Strings and string functions
     Brian Olsen
+    Sept.2021
 */
 
 let l = "~~~~~~~~~~~~~~~~~~~~~~~~~~";
