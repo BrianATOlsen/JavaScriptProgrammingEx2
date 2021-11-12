@@ -1,0 +1,67 @@
+<!--
+JavaScript Prog. Assignment 2
+Area of shapes
+Brian Olsen
+2021-10-06 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Polygon Shapes and their Properties</title>
+    
+    <script src='app.js'></script>
+    <script>
+        let currentDate = new Date().toString();
+
+       // try
+       // {
+            let squLenght = prompt("Provide a length in pixels for a square: ", 0);
+            let squLenghtParse = parseInt(squLenght);
+            
+            let recLenght = prompt("Provide a length in pixels for a rectangle: ", 0);
+            let recLenghtParse = parseInt(recLenght);
+
+            let recWidth = prompt("Provide a width in pixels for a rectangle: ", 0);
+            let recWidthParse = parseInt(recWidth);
+
+            let triBase = prompt("Provide a base in pixels for a triangle: ", 0);
+            let triBaseParse = parseInt(triBase);
+
+            let triHeight = prompt("Provide a height in pixels for a triangle: ", 0);
+            let triHeightParse = parseInt(triHeight);
+
+            let squPerimeter = squLenghtParse*4;
+            let squArea = squLenghtParse*squLenghtParse;
+            let recPerimeter = (recWidthParse*2)+(recLenghtParse*2);
+            let triArea = (triBaseParse/2)*triHeightParse;
+
+            //if(isNaN(squPerimeter,squArea,recPerimeter,triArea))
+            //{
+            //    throw new Error("Invalid entry.");
+            //}
+        //}
+        //catch (error)
+        //{
+        //    alert(error.message);
+        //}
+
+    </script>
+</head>
+<body>
+
+    <h1>Polygon Shapes and their Properties - <script>document.write(currentDate);</script></h1>
+
+    <h2>Square</h2>
+    <p>Your square has a lenght of <script>document.write(squLenghtParse);</script> pixels.</p>
+    <p>Your square has a perimeter of <script>document.write(squPerimeter);</script> pixels.</p>
+    <p>Your square has an area of <script>document.write(squArea);</script> pixels<sup>2</sup>.</p>  
+    <svg>
+        <rect width="100%" height="100%" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+    </svg>
+    
+</body>
+</html>
